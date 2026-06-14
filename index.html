@@ -1,15 +1,4 @@
-const CORS = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
-  "Access-Control-Allow-Headers": "*",
-};
-
-export default {
-  async fetch(request) {
-    if (request.method === "OPTIONS") {
-      return new Response(null, { status: 204, headers: CORS });
-    }
-    const html = `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -1776,12 +1765,4 @@ function toggleChangelog() {
 }
 </script>
 </body>
-</html>`;
-    return new Response(html, {
-      headers: {
-        "content-type": "text/html;charset=UTF-8",
-        ...CORS,
-      },
-    });
-  },
-};
+</html>

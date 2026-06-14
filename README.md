@@ -1,6 +1,6 @@
 # Ambient Documentation
 
-This repository contains the source code for the Cloudflare Worker serving the **Ambient Wiki**.
+This repository contains the source code for the HTML file of the **Ambient Wiki**.
 
 ## Contributing
 
